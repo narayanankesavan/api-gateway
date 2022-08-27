@@ -57,7 +57,7 @@ pipeline {
       steps{
 	  script {
 		sh "pwd"
-		sh "sudo docker run -it -d --name ${containername} -p 9000:9000 ${registry}:${dockerImage}"
+		sh "sudo docker run -it -d --name ${containername} -p 8080:8080 ${registry}:${dockerImage}"
 		}
       }
     }
